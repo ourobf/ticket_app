@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tichet_app/base/res/media.dart';
 import 'package:tichet_app/base/res/styles/app_styles.dart';
 import 'package:tichet_app/base/utils/app_routes.dart';
 import 'package:tichet_app/base/widgets/app_double_text.dart';
@@ -13,7 +12,6 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppStyles.bgColor,
       body: ListView(
