@@ -5,11 +5,13 @@ class AppColumnTextLayout extends StatelessWidget {
   final String topText;
   final String botomText;
   final CrossAxisAlignment alignment;
+  final bool? isColor;
   const AppColumnTextLayout({
     super.key,
     required this.topText,
     required this.botomText,
     required this.alignment,
+    this.isColor,
   });
 
   @override
@@ -19,12 +21,14 @@ class AppColumnTextLayout extends StatelessWidget {
       children: [
         TextStyleThird(
           text: topText,
+          isColor: isColor,
         ),
         const SizedBox(
           height: 5,
         ),
         TextStyleThird(
           text: botomText,
+          isColor: isColor,
         ),
       ],
     );
