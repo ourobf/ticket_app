@@ -23,7 +23,7 @@ class TicketView extends StatelessWidget {
     //size renvoie les dimension de l écran du téléphone
     return SizedBox(
       width: size.width * 0.85,
-      height: 189,
+      height: 180,
       child: Container(
         margin: EdgeInsets.only(
             //0 c est pour all_ticket.dart et 16 c est pour home_Screen.dart

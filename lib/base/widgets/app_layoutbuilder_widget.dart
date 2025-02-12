@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tichet_app/base/res/styles/app_styles.dart';
 
 //application pour placer les tirets entre les 2 ronds du ticket
 class AppLayoutbuilderWidget extends StatelessWidget {
