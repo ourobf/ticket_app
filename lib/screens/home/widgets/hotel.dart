@@ -60,8 +60,8 @@ class Hotel extends StatelessWidget {
             padding: const EdgeInsets.only(left: 15),
             child: Text(
               "\$${hotel['price']}/night",
-              style:
-                  AppStyles.headLineStyle1.copyWith(color: AppStyles.kakiColor),
+              style: AppStyles.headLineStyle1
+                  .copyWith(color: AppStyles.kakiColor, fontSize: 18),
             ),
           ),
         ],

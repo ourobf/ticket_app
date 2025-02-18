@@ -21,10 +21,13 @@ class _TicketScreenState extends State<TicketScreen> {
 
   @override
   void didChangeDependencies() {
-    var args = ModalRoute.of(context)!.settings.arguments as Map;
-    //cette est utilisée si on passe d une fenetre a une autre
-//tout en passant les donnees reccueillies de  l autre fenetre
-    ticketIndex = args["index"];
+    if (ModalRoute.of(context)!.settings.arguments != null) {
+      var args = ModalRoute.of(context)!.settings.arguments as Map;
+      //cette est utilisée si on passe d une fenetre a une autre
+      //tout en passant les donnees reccueillies de  l autre fenetre
+      ticketIndex = args["index"];
+    }
+
     super.didChangeDependencies();
   }
 
